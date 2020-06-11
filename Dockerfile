@@ -7,7 +7,7 @@ WORKDIR /app
 ADD    ./requirements.txt   /app/
 RUN    pip install -r requirements.txt
 
-ADD    ./django   /app/django/
-ADD    ./manage.py      /app/
+ADD    ./djangoexample   /app/djangoexample/
+ADD    ./app.py      /app/
 
-CMD ["python", "manage.py", "runserver", "0:8000"]
+CMD ["python", "app.py", "runserver", "0:8000"]
